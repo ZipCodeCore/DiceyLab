@@ -4,6 +4,19 @@ import org.junit.Test;
 public class DiceTest{
 
     @Test
+    public void diceConstructorTest() {
+        //Given
+        Integer expectedNumOfDie = 8;
+
+        //When
+        Dice dice = new Dice(expectedNumOfDie);
+        Integer actual = dice.getNumOfDie();
+
+        //Then
+        Assert.assertEquals(expectedNumOfDie, actual);
+    }
+
+    @Test
     public void tossAndSumTwoDiceTest() {
         //Given
         Dice dice = new Dice(2);

@@ -16,4 +16,8 @@ public class Dice {
         }
         return sum;
     }
+
+    public Integer getNumOfDie() {
+        return this.numberOfDie;
+    }
 }
