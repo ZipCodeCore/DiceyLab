@@ -18,7 +18,11 @@ public Integer getBin(Integer binNum){
         return binMap.get(binNum);
 }
 
-public void incrementBin(Integer binNum){
+    public Map<Integer, Integer> getBinMap() {
+        return binMap;
+    }
+
+    public void incrementBin(Integer binNum){
     Integer qty = binMap.containsKey(binNum) ? binMap.get(binNum) : 0;
     qty++;
      binMap.put(binNum,qty);
