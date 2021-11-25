@@ -1,3 +1,4 @@
+import java.beans.Transient;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -28,5 +29,6 @@ public class Bins {
         qty++;
         binMap.put(binNum, qty);
     }
+
 
 }

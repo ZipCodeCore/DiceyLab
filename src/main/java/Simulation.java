@@ -45,5 +45,11 @@ public class Simulation {
         return stars;
     }
 
+    public Integer getNumberOfDies() {
+        return numberOfDies;
+    }
 
+    public Integer getNumberOfTosses() {
+        return numberOfTosses;
+    }
 }
