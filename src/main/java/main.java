@@ -5,5 +5,10 @@ public class main {
         Simulation simulation = new Simulation(2, 1_000_000);
         simulation.runSimulation();
         simulation.printResults();
+
+
+      //  System.out.printf("%10s", "Hello");
+
+       // simulation.printStars(110903);
     }
 }
