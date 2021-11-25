@@ -14,7 +14,7 @@ public class Dice {
       int random;
       Integer sum = 0;
         for (int i = 0; i < numberOfDie; i++) {
-            random = ThreadLocalRandom.current().nextInt(1,6);
+            random = ThreadLocalRandom.current().nextInt(1,7);
             sum += random;
         }
        return sum;

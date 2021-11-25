@@ -10,22 +10,23 @@ public class Bins {
         this.binLow = binLow;
         this.binHigh = binHigh;
 
-        for (int i = binLow; i < binHigh ; i++) {
-            binMap.put(i,0);
+        for (int i = binLow; i <= binHigh; i++) {
+            binMap.put(i, 0);
         }
     }
-public Integer getBin(Integer binNum){
+
+    public Integer getBin(Integer binNum) {
         return binMap.get(binNum);
-}
+    }
 
     public Map<Integer, Integer> getBinMap() {
         return binMap;
     }
 
-    public void incrementBin(Integer binNum){
-    Integer qty = binMap.containsKey(binNum) ? binMap.get(binNum) : 0;
-    qty++;
-     binMap.put(binNum,qty);
-}
+    public void incrementBin(Integer binNum) {
+        Integer qty = binMap.containsKey(binNum) ? binMap.get(binNum) : 0;
+        qty++;
+        binMap.put(binNum, qty);
+    }
 
 }

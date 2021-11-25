@@ -14,6 +14,7 @@ public class Simulation {
         Dice dice = new Dice(numberOfDies);
         bins = new Bins(numberOfDies, numberOfDies*6);
         Integer total;
+
         for (int i = 0; i < numberOfTosses; i++) {
            total = dice.tossAndSum();
            bins.incrementBin(total);
