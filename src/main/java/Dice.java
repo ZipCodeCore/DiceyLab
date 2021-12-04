@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Dice {
     private static class Die{
@@ -11,18 +13,17 @@ public class Dice {
             return (this.result = (int) (Math.random()*(6 - 1 + 1) + 1));
         }
     }
-    private List<Die> dice = new ArrayList<>();
+    private final List<Die> dice;
     public Dice(int numberOfDice){
-        for (int i = 0; i < numberOfDice; i++) {
-            this.dice.add(new Die());
-        }
+        dice = Stream
+                .generate(Die::new)
+                .limit(numberOfDice)
+                .collect(Collectors.toList());
     }
     public int tossAndSum(){
-        int sum = 0;
-        for (int i = 0; i < dice.size(); i++) {
-            sum += this.dice.get(i).roll();
-        }
-        return sum;
+        return dice.stream()
+                .mapToInt(Die::roll)
+                .sum();
     }
     public List<Die> getDice(){
         return dice;
