@@ -60,3 +60,31 @@ Simulation of 2 dice tossed for 1000000 times.
 12 :    27514: 0.03 **
 ```
 
+**Hey**, that looks like a _normal distribution_.
+
+## What's a normal distribution?
+
+A _normal distribution_ is a probability distribution that is commonly used in statistics to describe real-world phenomena that tend to cluster around a mean value. It is also known as a Gaussian distribution or a **bell curve**.
+
+In a normal distribution, the data is symmetrically distributed around the mean value, with the majority of the data falling within one standard deviation of the mean. The distribution is characterized by two parameters: the mean (μ) and the standard deviation (σ). The mean represents the center of the distribution, while the standard deviation represents the spread of the data.
+
+The normal distribution is important in statistics because many natural phenomena, such as human height and IQ scores, tend to follow a normal distribution. It is also used in hypothesis testing and confidence interval calculations, as well as in machine learning algorithms such as linear regression and neural networks.
+
+The normal distribution has several key properties, including:
+
+- It is symmetric around the mean.
+- The mean, median, and mode are all equal.
+- The total area under the curve is equal to 1.
+- Approximately 68% of the data falls within one standard deviation of the mean, 95% falls within two standard deviations, and 99.7% falls within three standard deviations.
+
+So a normal distribution is a probability distribution that is commonly used to describe real-world phenomena that tend to cluster around a mean value. It is characterized by its symmetry, mean, and standard deviation, and is important in statistics and machine learning.
+
+## Why do two rolls of a die tend toward a normal distribution?
+
+Two rolls of a die do not give a normal distribution of values. In fact, the distribution of values obtained from rolling a single die is uniform, meaning that each possible value (1 through 6) has an equal probability of occurring.
+
+However, if you roll two dice and add the values together, the resulting distribution of values will approach a normal distribution as the number of rolls increases. This is due to the central limit theorem, which states that the sum of a large number of independent and identically distributed random variables will approach a normal distribution.
+
+In the case of rolling two dice, the sum of the values obtained is the random variable of interest. As the number of rolls increases, the distribution of the sum of the values will approach a normal distribution, with a mean of 7 (the expected value of the sum of two dice) and a standard deviation of approximately 2.42.
+
+It's worth noting that the distribution of the sum of two dice is not exactly normal, as it is a discrete distribution with a finite number of possible values. However, for practical purposes, the normal distribution is often used as an approximation.
